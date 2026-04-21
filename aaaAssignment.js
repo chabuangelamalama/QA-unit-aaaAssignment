@@ -6,7 +6,7 @@ test('returns Guest when name is empty', () => {
 // Arrange
 const name = "";
 // Act
-const result = "Greet (name)";
+const result = "greet (name)";
 // Assert
 expect(result).toBe("Guest");
 });
@@ -37,7 +37,7 @@ test('adds item to array', () => {
 // Arrange
 const arr = ["Chabu", "Gabby", "Emma", "Kuda"];
 // Act
-const result = addItem(arr,Rose);
+const result = addItem(arr,"Rose");
 // Assert
 expect(result).toEqual(5);
 });
@@ -49,7 +49,7 @@ return arr.filter(i => i !== item);
 }
 test('removes item from array', () => {
 // Arrange
-const arr = ["Emma","Chabu","Rose","Gabby"];
+const arr = ["Emma","Chabu","Rose","Gabby", "Kuda"];
 
 // Act
 const result = removeItem(arr, "Rose");
